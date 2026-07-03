@@ -237,3 +237,314 @@ footer {
     text-align: center;
   }
 }
+
+
+/* ===========================
+   CATÁLOGO
+=========================== */
+
+.catalogo-page{
+    background:#f4f4f4;
+    color:#222;
+    min-height:100vh;
+    padding-top:120px;
+}
+
+.catalogo-topo{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.catalogo-topo h1{
+    font-size:42px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.catalogo-topo p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.catalogo-busca{
+    width:90%;
+    max-width:850px;
+    margin:auto;
+    display:flex;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.catalogo-busca input{
+    flex:1;
+    padding:20px;
+    border:none;
+    outline:none;
+    font-size:18px;
+}
+
+.catalogo-busca button{
+    width:80px;
+    background:#FFD400;
+    border:none;
+    cursor:pointer;
+    font-size:22px;
+}
+
+.catalogo-layout{
+    width:95%;
+    max-width:1600px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:35px;
+}
+
+.filtros{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    height:max-content;
+}
+
+.filtros h3{
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+.filtros button{
+    width:100%;
+    padding:14px;
+    margin-bottom:12px;
+    border:none;
+    background:#f2f2f2;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.filtros button:hover{
+    background:#FFD400;
+}
+
+.produtos-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+    gap:25px;
+}
+
+.produto-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.produto-card:hover{
+    transform:translateY(-8px);
+}
+
+.produto-img{
+    height:220px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:80px;
+    background:#fafafa;
+}
+
+.produto-card h3{
+    padding:20px 20px 5px;
+    font-size:19px;
+}
+
+.produto-card p{
+    padding:0 20px;
+    color:#777;
+}
+
+.precos{
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.precos strong{
+    color:#0c8f39;
+}
+
+.produto-card button{
+    width:calc(100% - 40px);
+    margin:0 20px 20px;
+    padding:16px;
+    border:none;
+    border-radius:10px;
+    background:#FFD400;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.produto-card button:hover{
+    background:#f0c500;
+}
+
+@media(max-width:1000px){
+
+.catalogo-layout{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+/* ===========================
+   RESPONSIVO GERAL
+=========================== */
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 0 28px;
+  }
+
+  .menu {
+    gap: 16px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .catalogo-layout {
+    grid-template-columns: 230px 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    position: relative;
+    padding: 18px;
+    height: auto;
+  }
+
+  .logo img {
+    height: 65px;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 50px 22px;
+    min-height: auto;
+    background-position: center bottom;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+
+  .beneficios {
+    grid-template-columns: 1fr;
+  }
+
+  .catalogo-page {
+    padding-top: 40px;
+  }
+
+  .catalogo-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filtros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .filtros h3 {
+    grid-column: 1 / -1;
+  }
+
+  .produtos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+  }
+
+  .menu a {
+    background: #111;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .descricao {
+    font-size: 16px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .catalogo-topo h1 {
+    font-size: 30px;
+  }
+
+  .catalogo-busca {
+    width: 94%;
+  }
+
+  .catalogo-busca input {
+    font-size: 15px;
+    padding: 16px;
+  }
+
+  .filtros {
+    grid-template-columns: 1fr;
+  }
+
+  .produtos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .produto-img {
+    height: 170px;
+  }
+}

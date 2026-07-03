@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "categoria": "Whisky",
+    "produto": "Johnnie Walker Red Label 750ml",
+    "preco_loja": 65.99,
+    "preco_entrega": 66.99,
+    "imagem": "",
+    "destaque": "sim",
+    "ativo": "sim"
+  },
+  {
+    "id": 2,
+    "categoria": "Whisky",
+    "produto": "Jack Daniels Tradicional 1L",
+    "preco_loja": 117.99,
+    "preco_entrega": 119.99,
+    "imagem": "",
+    "destaque": "sim",
+    "ativo": "sim"
+  },
+  {
+    "id": 3,
+    "categoria": "Gin",
+    "produto": "Gin Tanqueray London Dry 750ml",
+    "preco_loja": 89.99,
+    "preco_entrega": 91.99,
+    "imagem": "",
+    "destaque": "não",
+    "ativo": "sim"
+  }
+]
