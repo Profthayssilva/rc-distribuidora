@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Contato | RC Distribuidora</title>
+
+  <meta
+    name="description"
+    content="Entre em contato com a RC Distribuidora pelo WhatsApp, Instagram ou telefone."
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="../assets/css/contato.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- Criada automaticamente pelo topBar.js -->
+
+  <header class="site-header">
+
+    <div class="header-main">
+
+      <a
+        href="../index.html"
+        class="logo"
+        aria-label="Voltar para a página inicial"
+      >
+        <img
+          src="../assets/img/logo.png"
+          alt="RC Distribuidora"
+        >
+      </a>
+
+      <div class="header-search">
+
+        <input
+          id="campoBuscaTopo"
+          type="search"
+          placeholder="Pesquise qualquer produto..."
+          autocomplete="off"
+          aria-label="Pesquisar produtos"
+        >
+
+        <button
+          type="button"
+          aria-label="Pesquisar"
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+      </div>
+
+      <a
+        class="header-whats"
+        id="btnWhatsContato"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar com a RC Distribuidora pelo WhatsApp"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp
+      </a>
+
+    </div>
+
+    <nav
+      class="header-menu"
+      aria-label="Menu principal"
+    >
+
+      <div class="header-menu-inner">
+
+        <a href="../index.html">
+          <i class="fa-solid fa-house"></i>
+          Início
+        </a>
+
+        <a href="catalogo.html">
+          <i class="fa-solid fa-box-open"></i>
+          Catálogo
+        </a>
+
+        <a href="promocoes.html">
+          <i class="fa-solid fa-fire"></i>
+          Promoções
+        </a>
+
+        <a href="entrega.html">
+          <i class="fa-solid fa-truck-fast"></i>
+          Entrega
+        </a>
+
+        <a
+          href="contato.html"
+          class="active"
+          aria-current="page"
+        >
+          <i class="fa-solid fa-phone"></i>
+          Contato
+        </a>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main class="contato-page">
+
+    <div class="contato-container">
+
+      <!-- APRESENTAÇÃO -->
+
+      <section class="contato-hero">
+
+        <div class="contato-hero-content">
+
+          <span class="contato-badge">
+            <i class="fa-solid fa-headset"></i>
+            Atendimento rápido
+          </span>
+
+          <h1>Fale com a RC Distribuidora</h1>
+
+          <p>
+            Tire suas dúvidas, consulte produtos ou faça seu pedido
+            diretamente pelo WhatsApp.
+          </p>
+
+        </div>
+
+      </section>
+
+      <!-- CONTEÚDO -->
+
+      <section class="contato-grid">
+
+        <!-- CANAIS DE ATENDIMENTO -->
+
+        <article class="contato-card">
+
+          <h2 class="contato-card-title">
+            Canais de atendimento
+          </h2>
+
+          <p class="contato-card-description">
+            Escolha a forma mais prática para falar conosco.
+          </p>
+
+          <div class="contato-lista">
+
+            <!-- WHATSAPP -->
+
+            <a
+              id="cardWhats"
+              class="contato-item"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+
+              <div class="contato-item-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+
+              <div class="contato-item-content">
+
+                <strong>WhatsApp</strong>
+
+                <span id="contatoWhats">
+                  Carregando...
+                </span>
+
+              </div>
+
+            </a>
+
+            <!-- INSTAGRAM -->
+
+            <a
+              id="cardInstagram"
+              class="contato-item"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+
+              <div class="contato-item-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+
+              <div class="contato-item-content">
+
+                <strong>Instagram</strong>
+
+                <span id="contatoInstagram">
+                  Carregando...
+                </span>
+
+              </div>
+
+            </a>
+
+            <!-- TELEFONE -->
+
+            <a
+              id="cardTelefone"
+              class="contato-item"
+              href="#"
+            >
+
+              <div class="contato-item-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+
+              <div class="contato-item-content">
+
+                <strong>Telefone</strong>
+
+                <span id="contatoTelefone">
+                  Carregando...
+                </span>
+
+              </div>
+
+            </a>
+
+            <!-- ENDEREÇO -->
+
+            <a
+              id="cardEndereco"
+              class="contato-item"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+
+              <div class="contato-item-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+
+              <div class="contato-item-content">
+
+                <strong>Endereço</strong>
+
+                <span id="contatoEndereco">
+                  Carregando...
+                </span>
+
+              </div>
+
+            </a>
+
+          </div>
+
+          <!-- CHAMADA PARA WHATSAPP -->
+
+          <div class="contato-whatsapp-box">
+
+            <h2>Envie uma mensagem</h2>
+
+            <p>
+              Clique no botão abaixo para iniciar seu atendimento
+              diretamente pelo WhatsApp.
+            </p>
+
+            <a
+              id="linkWhatsContato"
+              class="btn-contato-whatsapp"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              Chamar no WhatsApp
+            </a>
+
+          </div>
+
+        </article>
+
+        <!-- HORÁRIO DE ATENDIMENTO -->
+
+        <aside class="contato-card">
+
+          <h2 class="contato-card-title">
+            Horário de atendimento
+          </h2>
+
+          <p class="contato-card-description">
+            Confira nossos horários para pedidos e atendimento.
+          </p>
+
+          <div class="horarios-lista">
+
+            <div class="horario-item">
+
+              <strong>Segunda a sexta</strong>
+
+              <span id="horarioSegSex">
+                Carregando...
+              </span>
+
+            </div>
+
+            <div class="horario-item">
+
+              <strong>Sábado</strong>
+
+              <span id="horarioSab">
+                Carregando...
+              </span>
+
+            </div>
+
+            <div class="horario-item">
+
+              <strong>Domingo</strong>
+
+              <span
+                id="horarioDom"
+                class="horario-fechado"
+              >
+                Carregando...
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="contato-observacao">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <span>
+              Os horários podem sofrer alterações em feriados
+              e datas comemorativas.
+            </span>
+
+          </div>
+
+        </aside>
+
+      </section>
+
+      <!-- MAPA -->
+
+      <section
+        class="contato-card contato-mapa"
+        id="secaoMapaContato"
+        hidden
+      >
+
+        <h2 class="contato-card-title">
+          Nossa localização
+        </h2>
+
+        <p class="contato-card-description">
+          Veja como chegar até a RC Distribuidora.
+        </p>
+
+        <iframe
+          id="googleMaps"
+          title="Localização da RC Distribuidora"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- SCRIPTS -->
+
+  <script src="../assets/js/utils.js"></script>
+
+  <script src="../assets/services/sheets.js"></script>
+  <script src="../assets/services/configuracoes.js"></script>
+
+  <script src="../assets/components/layout/topBar.js"></script>
+
+  <script src="../assets/js/pesquisa.js"></script>
+  <script src="../assets/js/contato.js"></script>
+
+</body>
+
+</html>

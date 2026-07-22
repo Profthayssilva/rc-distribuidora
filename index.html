@@ -5,88 +5,214 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>RC Distribuidora | Catálogo Online de Bebidas em Anápolis</title>
+  <meta name="description" content="RC Distribuidora em Anápolis. Catálogo online de bebidas com preço de atacado, rota de entrega e pedido direto pelo WhatsApp.">
 
-  <meta name="description" content="RC Distribuidora em Anápolis. Catálogo online de bebidas, whisky, gin, vodka, vinho, espumante, gelo e produtos para festa com preço de atacado e entrega.">
-
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="logo">
-    <a href="index.html">
-        <img src="assets/img/logo.jpg" alt="RC Distribuidora">
+<header class="site-header">
+  <div class="header-main">
+    <a href="index.html" class="logo">
+      <img src="assets/img/logo.png" alt="RC Distribuidora">
     </a>
-</div>
 
-    <nav class="menu">
-      <a href="index.html" class="active">Início</a>
-      <a href="pages/catalogo.html">Catálogo</a>
-      <a href="pages/promocoes.html">Promoções</a>
-      <a href="pages/pedido.html">Pedido</a>
-      <a href="pages/entrega.html">Entrega</a>
-      <a href="pages/sobre.html">Sobre</a>
-      <a href="pages/contato.html">Contato</a>
-    </nav>
-
-    <div class="header-icons">
-      <span>🛒</span>
-      <a href="https://wa.me/5562981455074" target="_blank">🟢</a>
+    <div class="header-search">
+      <input type="text" placeholder="Pesquise qualquer produto...">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
-  </header>
 
-  <main>
+    <div class="header-actions">
+      <button class="header-icon" aria-label="Favoritos">
+        <i class="fa-regular fa-heart"></i>
+      </button>
 
-    <section class="hero">
-      <div class="overlay"></div>
+      <a class="header-icon" href="pages/catalogo.html" aria-label="Pedido">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>0</span>
+      </a>
 
-      <div class="hero-content">
-        <p class="tag">PREÇO DE ATACADO • ROTA DE ENTREGA • ANÁPOLIS</p>
+      <a class="header-whats" href="https://wa.me/5562981455074" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp
+      </a>
+    </div>
+  </div>
 
-        <h1>
-          CATÁLOGO ONLINE<br>
-          <span>RC DISTRIBUIDORA</span>
-        </h1>
+  <nav class="header-menu">
+    <div class="header-menu-inner">
+      <a href="index.html" class="active"><i class="fa-solid fa-house"></i> Início</a>
+      <a href="pages/catalogo.html"><i class="fa-solid fa-box-open"></i> Catálogo</a>
+      <a href="pages/promocoes.html"><i class="fa-solid fa-fire"></i> Promoções</a>
+      <a href="pages/entrega.html"><i class="fa-solid fa-truck-fast"></i> Entrega</a>
+      <a href="pages/contato.html"><i class="fa-solid fa-phone"></i> Contato</a>
+    </div>
+  </nav>
+</header>
 
-        <p class="descricao">
-          Os melhores rótulos com preço de atacado e entrega rápida para você.
-        </p>
+<main>
 
-        <div class="buttons">
-          <a href="pages/catalogo.html" class="btn-primary">🛒 VER CATÁLOGO</a>
-          <a href="https://wa.me/5562981455074" target="_blank" class="btn-outline">💬 FAZER PEDIDO NO WHATSAPP</a>
+  <section class="hero-slider" id="heroSlider"></section>
+
+ <section class="home-section">
+  <div class="section-head">
+    <h2>Categorias</h2>
+    <a href="pages/catalogo.html">Ver todas</a>
+  </div>
+
+  <div
+    id="homeCategorias"
+    class="home-categories">
+
+</div>
+</section>
+
+<section class="home-section">
+  <div class="section-head">
+    <h2>Promoções</h2>
+    <a href="pages/promocoes.html">Ver todas</a>
+  </div>
+
+  <div
+    id="homePromocoes"
+    class="home-products">
+</div>
+</section>
+
+<section class="home-section">
+
+    <div class="section-head">
+
+        <h2>Mais Vendidos</h2>
+
+        <a href="pages/catalogo.html">
+
+            Ver todos
+
+        </a>
+
+    </div>
+
+    <div
+        id="homeMaisVendidos"
+        class="home-products">
+
+    </div>
+
+</section>
+<section class="home-benefits">
+  <div class="benefit-item">
+    <i class="fa-solid fa-truck-fast"></i>
+    <div>
+      <strong>Entrega rápida</strong>
+      <span>em Anápolis</span>
+    </div>
+  </div>
+
+  <div class="benefit-item">
+    <i class="fa-solid fa-tag"></i>
+    <div>
+      <strong>Preço de atacado</strong>
+      <span>para comprar melhor</span>
+    </div>
+  </div>
+
+  <div class="benefit-item">
+    <i class="fa-brands fa-whatsapp"></i>
+    <div>
+      <strong>Atendimento</strong>
+      <span>direto no WhatsApp</span>
+    </div>
+  </div>
+
+  <div class="benefit-item">
+    <i class="fa-solid fa-lock"></i>
+    <div>
+      <strong>Compra segura</strong>
+      <span>pedido sem complicação</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-info">
+
+            <p id="footerTelefone" class="footer-contact"></p>
+
+            <p id="footerEndereco" class="footer-contact"></p>
+
         </div>
-      </div>
-    </section>
 
-    <section class="beneficios">
-      <div class="beneficio-card">
-        <div class="icon">🏷️</div>
-        <h3>PREÇO DE ATACADO</h3>
-        <p>Menor preço com qualidade comprovada.</p>
-      </div>
+        <div class="footer-social">
 
-      <div class="beneficio-card">
-        <div class="icon">🚚</div>
-        <h3>ROTA DE ENTREGA</h3>
-        <p>Entregamos para várias regiões.</p>
-      </div>
+            <a
+                id="footerInstagram"
+                class="footer-social-button footer-instagram"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fa-brands fa-instagram"></i>
 
-      <div class="beneficio-card">
-        <div class="icon">🅿️</div>
-        <h3>ESTACIONAMENTO EXCLUSIVO</h3>
-        <p>Mais comodidade para você.</p>
-      </div>
-    </section>
+                <span>Instagram</span>
+            </a>
 
-  </main>
+            <a
+                id="footerWhatsApp"
+                class="footer-social-button footer-whatsapp"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
 
-  <footer>
-    <span>📞 62 98145-5074</span>
-    <span>📍 Rua Quintino Bocaiúva, 922 - Centro, Anápolis</span>
-    <span>📷 distribuidorarcdestilados</span>
-  </footer>
+                <span>Fazer pedido</span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 RC Distribuidora. Todos os direitos reservados.
+        </p>
+    </div>
+
+</footer>
+
+<a href="https://wa.me/5562981455074" class="floating-whats" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+
+<script src="assets/js/utils.js"></script>
+
+<script src="assets/services/sheets.js"></script>
+<script src="assets/services/configuracoes.js"></script>
+<script src="assets/services/categorias.js"></script>
+<script src="assets/services/produtos.js"></script>
+<script src="assets/services/banners.js"></script>
+<script src="assets/components/layout/topBar.js"></script>
+<script src="assets/services/promocoes.js"></script>
+<script src="assets/services/maisVendidos.js"></script>
+
+<script src="assets/components/products/cardProduto.js"></script>
+<script src="assets/components/ui/cardCategoria.js"></script>
+<script src="assets/components/layout/heroSlider.js"></script>
+
+<script src="assets/js/home.js"></script>
+<script src="assets/js/app.js"></script>
 
 </body>
 </html>

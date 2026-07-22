@@ -1,0 +1,33 @@
+:root {
+  /* Cores principais */
+  --color-black: #050505;
+  --color-dark: #0b0b0b;
+  --color-card: #ffffff;
+  --color-yellow: #ffd400;
+  --color-yellow-dark: #e0b900;
+  --color-green: #25d366;
+
+  /* Textos */
+  --color-text: #161616;
+  --color-muted: #666666;
+  --color-white: #ffffff;
+
+  /* Bordas e fundos */
+  --color-border: #e8e8e8;
+  --color-bg: #f5f5f5;
+  --color-soft: #fafafa;
+
+  /* Layout */
+  --container: 1180px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  /* Sombras */
+  --shadow-sm: 0 6px 18px rgba(0,0,0,.06);
+  --shadow-md: 0 12px 32px rgba(0,0,0,.10);
+  --shadow-lg: 0 22px 55px rgba(0,0,0,.18);
+
+  /* Transição */
+  --transition: .25s ease;
+}

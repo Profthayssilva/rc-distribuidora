@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
 
@@ -8,11 +9,11 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>Catálogo de Bebidas | RC Distribuidora</title>
+  <title>Promoções | RC Distribuidora</title>
 
   <meta
     name="description"
-    content="Catálogo online da RC Distribuidora. Pesquise bebidas, veja preços para retirada e entrega e envie seu pedido pelo WhatsApp."
+    content="Promoções da RC Distribuidora. Produtos em destaque com pedido direto pelo WhatsApp."
   >
 
   <link
@@ -28,13 +29,8 @@
 </head>
 
 <body>
-  
 
-    
-
-  <!-- ============================================
-       CABEÇALHO
-  ============================================= -->
+  <!-- A barra superior será criada automaticamente pelo topBar.js -->
 
   <header class="site-header">
 
@@ -54,16 +50,17 @@
       <div class="header-search">
 
         <input
-          id="campoBuscaTopo"
+          id="campoBuscaPromocoes"
           type="search"
-          placeholder="Pesquise por produto, marca ou categoria..."
+          placeholder="Buscar produto em promoção..."
           autocomplete="off"
-          aria-label="Pesquisar produtos"
+          aria-label="Buscar promoções"
         >
 
         <button
           type="button"
-          aria-label="Pesquisar"
+          id="btnBuscarPromocoes"
+          aria-label="Pesquisar promoções"
         >
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
@@ -97,16 +94,16 @@
           Início
         </a>
 
-        <a
-          href="catalogo.html"
-          class="active"
-          aria-current="page"
-        >
+        <a href="catalogo.html">
           <i class="fa-solid fa-box-open"></i>
           Catálogo
         </a>
 
-        <a href="promocoes.html">
+        <a
+          href="promocoes.html"
+          class="active"
+          aria-current="page"
+        >
           <i class="fa-solid fa-fire"></i>
           Promoções
         </a>
@@ -127,61 +124,28 @@
 
   </header>
 
-  <!-- ============================================
-       CONTEÚDO PRINCIPAL
-  ============================================= -->
-
   <main class="catalogo-main">
 
     <section class="catalogo-banner">
 
       <div>
 
-        <span>CATÁLOGO ONLINE</span>
+        <span>PROMOÇÕES</span>
 
-        <h1>
-          Escolha seus produtos e envie o pedido pelo WhatsApp
-        </h1>
+        <h1>Produtos em destaque da RC Distribuidora</h1>
 
         <p>
-          Pesquise por nome, marca ou categoria.
-          Atendimento rápido em Anápolis e região.
+          Confira os produtos marcados como destaque na planilha.
         </p>
 
       </div>
 
     </section>
 
-    <section class="catalogo-wrapper">
-
-      <!-- ========================================
-           CATEGORIAS
-      ========================================= -->
-
-      <aside class="catalogo-sidebar">
-
-        <h2>Categorias</h2>
-
-        <div id="listaCategorias">
-
-          <button
-            type="button"
-            class="filtro-btn ativo"
-            data-categoria="todos"
-          >
-            <i class="fa-solid fa-border-all"></i>
-            Todos os produtos
-          </button>
-
-          <!-- Categorias carregadas pelo JavaScript -->
-
-        </div>
-
-      </aside>
-
-      <!-- ========================================
-           PRODUTOS
-      ========================================= -->
+    <section
+      class="catalogo-wrapper"
+      style="grid-template-columns: 1fr;"
+    >
 
       <section class="catalogo-content">
 
@@ -189,30 +153,30 @@
 
           <div>
 
-            <h2>Produtos disponíveis</h2>
+            <h2>Promoções disponíveis</h2>
 
             <p
-              id="totalProdutos"
+              id="totalPromocoes"
               aria-live="polite"
             >
-              Carregando produtos...
+              Carregando promoções...
             </p>
 
           </div>
 
           <label
-            for="ordenarProdutos"
+            for="ordenarPromocoes"
             class="sr-only"
           >
-            Ordenar produtos
+            Ordenar promoções
           </label>
 
           <select
-            id="ordenarProdutos"
-            aria-label="Ordenar produtos"
+            id="ordenarPromocoes"
+            aria-label="Ordenar promoções"
           >
             <option value="padrao">
-              Ordenar produtos
+              Ordenar promoções
             </option>
 
             <option value="menor">
@@ -236,11 +200,11 @@
 
         <div
           class="produtos-grid"
-          id="produtosGrid"
+          id="promocoesGrid"
           aria-live="polite"
         >
           <div class="sem-produtos">
-            Carregando produtos...
+            Carregando promoções...
           </div>
         </div>
 
@@ -250,9 +214,7 @@
 
   </main>
 
-  <!-- ============================================
-       CARRINHO LATERAL
-  ============================================= -->
+  <!-- CARRINHO -->
 
   <aside
     class="carrinho-lateral"
@@ -346,27 +308,23 @@
     id="carrinhoOverlay"
   ></div>
 
-  <!-- ============================================
-       SCRIPTS
-  ============================================= -->
+  <!-- SCRIPTS -->
 
-<script src="../assets/js/utils.js"></script>
+  <script src="../assets/js/utils.js"></script>
 
-<script src="../assets/services/sheets.js"></script>
-<script src="../assets/services/configuracoes.js"></script>
-<script src="../assets/services/produtos.js"></script>
-<script src="../assets/services/categorias.js"></script>
-<script src="../assets/services/promocoes.js"></script>
-<script src="../assets/services/maisVendidos.js"></script>
+  <script src="../assets/services/sheets.js"></script>
+  <script src="../assets/services/configuracoes.js"></script>
+  <script src="../assets/services/produtos.js"></script>
+  <script src="../assets/services/promocoes.js"></script>
 
-<script src="../assets/components/layout/topBar.js"></script>
+  <script src="../assets/components/layout/topBar.js"></script>
 
-<script src="../assets/components/products/cardProduto.js"></script>
-<script src="../assets/components/ui/cardCategoria.js"></script>
-<script src="../assets/components/cart/carrinho.js"></script>
+  <script src="../assets/components/products/cardProduto.js"></script>
+  <script src="../assets/components/cart/carrinho.js"></script>
 
-<script src="../assets/js/pesquisa.js"></script>
-<script src="../assets/js/catalogo.js"></script>
+  <script src="../assets/js/pesquisa.js"></script>
+  <script src="../assets/js/promocoes.js"></script>
 
 </body>
+
 </html>

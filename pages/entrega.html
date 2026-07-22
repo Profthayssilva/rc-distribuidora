@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Entrega | RC Distribuidora</title>
+
+  <meta
+    name="description"
+    content="Consulte as rotas, horários, retirada e condições de entrega da RC Distribuidora."
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="../assets/css/catalogo.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- A barra superior será criada automaticamente pelo topBar.js -->
+
+  <header class="site-header">
+
+    <div class="header-main">
+
+      <a
+        href="../index.html"
+        class="logo"
+        aria-label="Voltar para a página inicial"
+      >
+        <img
+          src="../assets/img/logo.png"
+          alt="RC Distribuidora"
+        >
+      </a>
+
+      <div class="header-search">
+
+        <input
+          id="campoBuscaTopo"
+          type="search"
+          placeholder="Pesquise qualquer produto..."
+          autocomplete="off"
+          aria-label="Pesquisar produtos"
+        >
+
+        <button
+          type="button"
+          aria-label="Pesquisar"
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+      </div>
+
+      <a
+        class="header-whats"
+        id="btnWhatsEntrega"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp
+      </a>
+
+    </div>
+
+    <nav
+      class="header-menu"
+      aria-label="Menu principal"
+    >
+
+      <div class="header-menu-inner">
+
+        <a href="../index.html">
+          <i class="fa-solid fa-house"></i>
+          Início
+        </a>
+
+        <a href="catalogo.html">
+          <i class="fa-solid fa-box-open"></i>
+          Catálogo
+        </a>
+
+        <a href="promocoes.html">
+          <i class="fa-solid fa-fire"></i>
+          Promoções
+        </a>
+
+        <a
+          href="entrega.html"
+          class="active"
+          aria-current="page"
+        >
+          <i class="fa-solid fa-truck-fast"></i>
+          Entrega
+        </a>
+
+        <a href="contato.html">
+          <i class="fa-solid fa-phone"></i>
+          Contato
+        </a>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main class="catalogo-main">
+
+    <section class="catalogo-banner">
+
+      <div>
+
+        <span>ENTREGA E RETIRADA</span>
+
+        <h1>Receba seu pedido ou retire na loja</h1>
+
+        <p>
+          Consulte as rotas, horários e condições de atendimento da RC Distribuidora.
+        </p>
+
+      </div>
+
+    </section>
+
+    <section
+      class="catalogo-wrapper"
+      style="grid-template-columns: 1fr;"
+    >
+
+      <section class="catalogo-content">
+
+        <!-- INFORMAÇÕES PRINCIPAIS -->
+
+        <div class="home-benefits entrega-beneficios">
+
+          <div class="benefit-item">
+
+            <i class="fa-solid fa-truck-fast"></i>
+
+            <div>
+              <strong>Entrega</strong>
+
+              <span id="infoEntrega">
+                Carregando...
+              </span>
+            </div>
+
+          </div>
+
+          <div class="benefit-item">
+
+            <i class="fa-solid fa-store"></i>
+
+            <div>
+              <strong>Retirada</strong>
+
+              <span id="infoRetirada">
+                Carregando...
+              </span>
+            </div>
+
+          </div>
+
+          <div class="benefit-item">
+
+            <i class="fa-solid fa-route"></i>
+
+            <div>
+              <strong>Rota de entrega</strong>
+
+              <span id="infoRotaEntrega">
+                Carregando...
+              </span>
+            </div>
+
+          </div>
+
+          <div class="benefit-item">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+              <strong>Área atendida</strong>
+
+              <span id="infoAreaEntrega">
+                Carregando...
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- DETALHES -->
+
+        <section class="entrega-detalhes">
+
+          <article class="entrega-card">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <div>
+
+              <h2>Horário de atendimento</h2>
+
+              <p>
+                <strong>Segunda a sexta:</strong>
+
+                <span id="horarioSegSex">
+                  Carregando...
+                </span>
+              </p>
+
+              <p>
+                <strong>Sábado:</strong>
+
+                <span id="horarioSab">
+                  Carregando...
+                </span>
+              </p>
+
+              <p>
+                <strong>Domingo:</strong>
+
+                <span id="horarioDom">
+                  Carregando...
+                </span>
+              </p>
+
+            </div>
+
+          </article>
+
+          <article class="entrega-card">
+
+            <i class="fa-solid fa-map-location-dot"></i>
+
+            <div>
+
+              <h2>Endereço da loja</h2>
+
+              <p id="infoEndereco">
+                Carregando endereço...
+              </p>
+
+              <a
+                id="linkEnderecoEntrega"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                hidden
+              >
+                <i class="fa-solid fa-location-arrow"></i>
+                Abrir no Google Maps
+              </a>
+
+            </div>
+
+          </article>
+
+          <article class="entrega-card">
+
+            <i class="fa-solid fa-money-bill-wave"></i>
+
+            <div>
+
+              <h2>Condições da entrega</h2>
+
+              <p>
+                <strong>Pedido mínimo:</strong>
+
+                <span id="infoPedidoMinimo">
+                  Consulte
+                </span>
+              </p>
+
+              <p>
+                <strong>Taxa de entrega:</strong>
+
+                <span id="infoTaxaEntrega">
+                  Consulte
+                </span>
+              </p>
+
+              <p>
+                <strong>Frete grátis:</strong>
+
+                <span id="infoFreteGratis">
+                  Consulte
+                </span>
+              </p>
+
+            </div>
+
+          </article>
+
+        </section>
+
+        <!-- ROTAS POR DIA -->
+
+        <section class="entrega-rotas">
+
+          <h2>Rotas de entrega</h2>
+
+          <p>
+            Consulte os bairros ou regiões atendidos em cada dia.
+          </p>
+
+          <div class="rotas-grid">
+
+            <article class="rota-card">
+              <strong>Segunda-feira</strong>
+              <span id="rotaSegunda">Consulte</span>
+            </article>
+
+            <article class="rota-card">
+              <strong>Terça-feira</strong>
+              <span id="rotaTerca">Consulte</span>
+            </article>
+
+            <article class="rota-card">
+              <strong>Quarta-feira</strong>
+              <span id="rotaQuarta">Consulte</span>
+            </article>
+
+            <article class="rota-card">
+              <strong>Quinta-feira</strong>
+              <span id="rotaQuinta">Consulte</span>
+            </article>
+
+            <article class="rota-card">
+              <strong>Sexta-feira</strong>
+              <span id="rotaSexta">Consulte</span>
+            </article>
+
+            <article class="rota-card">
+              <strong>Sábado</strong>
+              <span id="rotaSabado">Consulte</span>
+            </article>
+
+          </div>
+
+        </section>
+
+        <!-- MAPA -->
+
+        <section
+          class="contato-mapa"
+          id="secaoMapaEntrega"
+          hidden
+        >
+
+          <h2>Localização</h2>
+
+          <iframe
+            id="googleMapsEntrega"
+            title="Localização da RC Distribuidora"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+        </section>
+
+        <!-- CTA -->
+
+        <section class="entrega-cta">
+
+          <h2>Consulte sua região</h2>
+
+          <p>
+            Fale diretamente com a equipe para verificar disponibilidade,
+            prazo e valor da entrega.
+          </p>
+
+          <a
+            id="linkWhatsEntrega"
+            class="btn btn-green"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            Consultar entrega no WhatsApp
+          </a>
+
+        </section>
+
+      </section>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+
+    <p id="footerTelefone"></p>
+
+    <p id="footerEndereco"></p>
+
+    <p id="footerInstagram"></p>
+
+  </footer>
+
+  <!-- SCRIPTS -->
+
+  <script src="../assets/js/utils.js"></script>
+
+  <script src="../assets/services/sheets.js"></script>
+  <script src="../assets/services/configuracoes.js"></script>
+
+  <script src="../assets/components/layout/topBar.js"></script>
+
+  <script src="../assets/js/pesquisa.js"></script>
+  <script src="../assets/js/entrega.js"></script>
+
+</body>
+
+</html>
